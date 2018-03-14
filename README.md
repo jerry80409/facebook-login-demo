@@ -13,7 +13,7 @@ curl -XGET "http://localhost:8888/api/facebook/user/login?perms=public_profile,e
 ### Step2. Setting facebook app for oauth redirect uri
 when client click the oauth login url, facebook will send a request to `/api/facebook/oauth/callback`,
 you must be setting `Valid OAuth redirect URIs` on your facebook app dashboard.
-![alt app-dashboard](src/resources/static/facebook-app-dashboard.png "facebook-app-dashboard")
+![alt app-dashboard](src/main/resources/static/facebook-app-dashboard.png "facebook-app-dashboard")
 
 ### Step3. Handle facebook oauth login callback
 The REST resource of `/api/facebook/oauth/callback` will handle the facebook callback,
