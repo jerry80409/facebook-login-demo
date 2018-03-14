@@ -65,7 +65,7 @@ public class OAuthController {
                                             @RequestParam(value = "perms", required = false) List<String> perms)
             throws MalformedURLException, UnsupportedEncodingException {
 
-        // TODO: 2018/3/13 jwt 驗證, server side auth 驗證機制
+        // TODO: 2018/3/13 jwt 驗證, server side auth verify
 
         // facebook login dialog url。
         final HttpUrl baseURL = HttpUrl.get(new URL(DIALOG_URL));
